@@ -344,7 +344,6 @@ class ShopSelector:
             raise KeyError(f'В регионе {region} города {city} нет магазинов')
 
         # Подтверждаем выбор
-        time.sleep(5)
         try:
             submit_button = (
                 WebDriverWait(self.driver, DEFAULT_DELAY)
